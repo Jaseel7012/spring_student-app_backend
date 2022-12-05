@@ -7,11 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
     @GetMapping("/")
     public String Homepage(){
-        return "welcome my java";
+        return "welcome my homepage";
     }
     @GetMapping("/contact")
     public String ContactPage(){
-        return "welcome my wbsite";
+        return "welcome my contact page";
+    }
+
+    @GetMapping("/gallery")
+
+    public String Gallery(){
+        return "welcome to gallery page";
     }
 
 }
